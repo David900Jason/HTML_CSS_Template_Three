@@ -1,0 +1,141 @@
+html {
+  direction: rtl;
+}
+
+img {
+  transform: rotateY(180deg);
+}
+
+.header .main-nav > li > a::before {
+  left: 100%;
+}
+
+.header .mega-menu .links li a i {
+  margin-left: 10px;
+}
+
+.header .mega-menu .links li::before {
+  right: 0;
+}
+
+.fa-long-arrow-alt-right::before {
+  content: "\f30a" !important;
+}
+
+.gallery .box .image img {
+  transform: rotate(0deg);
+}
+
+.gallery .box .image:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.features .box .img-holder img {
+  transform: rotateY(0deg);
+}
+
+.features .box .img-holder::before {
+  z-index: 1;
+}
+
+.features .box .img-holder::after {
+  z-index: 2;
+}
+
+.testimonials .box img {
+  left: -10px;
+  right: auto;
+}
+
+.team .box .info {
+  padding-right: 80px;
+}
+
+.team .box::before, .team .box::after {
+  left: 0;
+  right: auto;
+}
+
+.services .box .info {
+  text-align: left;
+}
+
+.services .box .info::after {
+  transform: skewX(30deg);
+  right: 80px;
+}
+
+.services .box .info::before {
+  right: 0;
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.our-skills .skill .the-progress span {
+  right: 0;
+  left: auto;
+}
+
+.work-steps .info .box img {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.work-steps .image {
+  margin-right: 0;
+  margin-left: 100px;
+}
+
+.pricing .box::before {
+  left: 0px;
+  top: 0px;
+}
+
+.pricing .box ul li {
+  text-align: right;
+}
+
+.pricing .box ul li::after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.pricing .box ul li::before {
+  content: '';
+}
+
+.footer .box .links li a::after {
+  content: '\f100';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left: 10px;
+  margin-right: 0;
+  color: var(--main-color);
+}
+
+.footer .box .links li:hover {
+  padding-right: 10px;
+}
+
+.footer .box .links li a::before {
+  content: '';
+}
+
+.footer .box .line i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.footer .box .social li {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+@keyframes moving-arrow {
+  100% {
+    transform: translateX(-10px);
+  }
+}
